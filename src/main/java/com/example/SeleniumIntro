@@ -1,0 +1,36 @@
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class SeleniumIntro {
+
+	public static void main(String[] args) {
+		
+		//Invoking with Browser
+		//Run selenium in chrome browser- ChromeDriver -  methods present and automatic
+		// all web application methods are same like in chrome,firefox,edge 
+		//any hitting url main brower  is from get method allsame in web application
+		//What rules to be followed is instructed by Webdriver - simple is an interface
+		
+		//ChromeDriver.exe (selecnium work to be done here ) -- is the thirdparty driver file to launch chrome browser
+		// step to invovke chrome driver - path is provided and it will flow  
+		//Step -1 -Selenium Manager will Automaticlaly -driver here
+		//in manual way we are using  -  still selenium manager invoke with chrome browser
+		System.setProperty("Webdriver.chrome.driver", "https://googlechromelabs.github.io/chrome-for-testing/");
+		//selenium check the path of that file - where we can get from the chrome 
+		//chrome launch
+		WebDriver cdriver = new ChromeDriver();
+		
+		
+		//Firefox launch - selenium cant talk directly tofirefox server there is an geckodDriver
+		WebDriver driver = new FirefoxDriver();
+		//IF i want any url to be open and tested this webdriver already setting with the method and process
+		driver.get("https://github.com/SHRUTHI-2810");
+		System.out.println(driver.getTitle());
+		System.out.println(driver.getCurrentUrl());
+		driver.close(); // where the current window is get closed -  partivular tab
+		driver.quit(); // associated window opened by automation will be closed
+
+	}
+
+}
