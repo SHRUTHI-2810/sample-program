@@ -42,7 +42,7 @@ public class base {
 
 		driver.findElement(By.xpath("//button[contains(text(),'PROCEED TO CHECKOUT')]")).click();
 
-		w.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("input.promoCode")));
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("input.promoCode")));
 
 		driver.findElement(By.cssSelector("input.promoCode")).sendKeys("rahulshettyacademy");
 
@@ -50,7 +50,7 @@ public class base {
 
 //explicit wait
 
-		w.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("span.promoInfo")));
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("span.promoInfo")));
 
 		System.out.println(driver.findElement(By.cssSelector("span.promoInfo")).getText());
 
