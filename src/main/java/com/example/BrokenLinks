@@ -45,7 +45,7 @@ public class BrokenLinks {
 
 		// a[href*="soapui"]'
 
-		driver.get("https://rahulshettyacademy.com/AutomationPractice/");
+		driver.get("https://AutomationPractice/");
 
 		List<WebElement> links = driver.findElements(By.cssSelector("li[class='gf-li'] a"));
 
