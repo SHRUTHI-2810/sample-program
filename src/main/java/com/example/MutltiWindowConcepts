@@ -14,11 +14,10 @@ public class WIndowHandles {
 
 // TODO Auto-generated method stub
 
-		System.setProperty("webdriver.chrome.driver", "/Users/rahulshetty/Downloads/chromedriver");
-
+		
 		WebDriver driver = new ChromeDriver();
 
-		driver.get("https://rahulshettyacademy.com/loginpagePractise/#");
+		driver.get("https://loginpagePractise/#");
 
 		driver.findElement(By.cssSelector(".blinkingText")).click();
 
