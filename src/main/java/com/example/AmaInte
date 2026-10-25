@@ -28,7 +28,7 @@ public class base {
 
 		String[] itemsNeeded = { "Cucumber", "Brocolli", "Beetroot" };
 
-		driver.get("https://rahulshettyacademy.com/seleniumPractise/");
+		driver.get("https://seleniumPractise/");
 
 		Thread.sleep(3000);
 
