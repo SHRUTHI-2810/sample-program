@@ -28,7 +28,7 @@ public class JavaSampleUnderstandingPrograms {
 	      }
 	      
 	      //enhanced for loop:
-	      String[] names= {"shruthi", "Boopathi", "family"};
+	      String[] names= {"Shruthi", "Boopathi", "family"};
 	      		for(String s: names) {
 	      			System.out.println(s);
 	      		}
