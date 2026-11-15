@@ -97,13 +97,7 @@ public void befoclas()
 		data[2][1]="thirdpassword";
 		return data;
 		
-		
-		
 	
-		
-		
-		
-		
 	}
 	
 }
